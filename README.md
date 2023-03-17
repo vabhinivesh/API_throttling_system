@@ -16,6 +16,10 @@
 
 `python manage.py runserver`
 
+* The pending migrations error(if any)  can be fixed by executing
+
+`python manage.py migrate`
+
 * Open the running server by going to http://127.0.0.1:8000/ on browser
 * You can try the API throttling by clicking multiple times the GET button.
 * Once, the API reaches the threshold limit. there will be a forbidden error with a message 'API limit exceeded'.
