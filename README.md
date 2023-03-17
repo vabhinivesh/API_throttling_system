@@ -36,5 +36,5 @@ We can update the limit and time by updating the settings file.
 #### Plan and future enhancements:
 For a Django  application we can either use a decorator, or a middleware for checking the rate of the request. Here I used a middleware because the functionality automatically adds to all the Url's we create.
 
-When we scale the application we can use the same function and wrap it using a simple flask application and use the same code as a microservice.
-This microservice will be placed in front of the actual application and checks the incoming requests before hitting the service.
+When we scale the application we can use the same function and wrap it using a simple flask application or a fast api app (or use node or golang) and use the same code as a microservice.
+This microservice will be placed in front of the actual application and checks the incoming requests before hitting the actual server.
