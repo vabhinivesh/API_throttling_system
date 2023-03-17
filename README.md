@@ -24,7 +24,7 @@
 * You can try the API throttling by clicking multiple times the GET button.
 * Once, the API reaches the threshold limit. there will be a forbidden error with a message 'API limit exceeded'.
 * The API will be re-enabled once the TIME_GAP period is over. 
-
+* The application is hosted at https://django.abhinivesh.online/
 
 ##### For changing Limit and time:
 We can update the limit and time by updating the settings file. 
