@@ -121,8 +121,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Throttling controls
+API_REFERER = 'i'  # 'r' for checking the http_referer.  put 'i' for checking the IP address
 
+# Throttling controls
 API_LIMIT = 10  # No of api's allowed before throttling
 TIME_GAP = 60  # Time in seconds to check throttling
-API_REFERER = 'i'  # 'r' for checking the http_referer.  put 'i' for

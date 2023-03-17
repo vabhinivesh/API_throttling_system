@@ -18,4 +18,18 @@
 
 * Open the running server by going to http://127.0.0.1:8000/ on browser
 * You can try the API throttling by clicking multiple times the GET button.
-* Once, the API reaches the threshold limit. there will be a forbidden error with a message 'API limit exceeded'. 
+* Once, the API reaches the threshold limit. there will be a forbidden error with a message 'API limit exceeded'.
+
+
+##### For changing Limit and time:
+We can update the limit and time by updating the settings file. 
+
+* API_LIMIT = 10 - No of api's allowed before throttling
+* TIME_GAP = 60 - Time in seconds to check throttling
+
+
+#### Plan and future enhancements:
+For a Django  application we can either use a decorator, or a middleware for checking the rate of the request. Here I used a middleware because the functionality automatically adds to all the Url's we create.
+
+When we scale the application we can use the same function and wrap it using a simple flask application and use the same code as a microservice.
+This microservice will be placed in front of the actual application and checks the incomming
